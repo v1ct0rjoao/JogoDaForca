@@ -12,6 +12,7 @@ public class RegrasDoJogo {
     Arrays.fill(letrasAdivinhadas, '_');
     this.tentativas = 0;
 
+
   }
 
   public boolean letraValida(char letra){
@@ -81,7 +82,21 @@ public class RegrasDoJogo {
     this.tentativas = tentativas;
   }
 
-}
+  // public boolean acertouLetra(char letra){
+  //   boolean acertou = acertouTodasAsLetras();
+  //   if(acertou){
+  //       for(int i = 0; i<palavra.getPalavra().length();i++){
+  //           if(palavra.getPalavra().charAt(i)== letra){
+  //               letrasAdivinhadas[i] = letra;
+  //               tentativas++;
+  //           }
+  //       }
+  //   }else{
+  //     decrementarTentativas();
+  //   }
+  //   return acertou;
+  }
+
 
 
 

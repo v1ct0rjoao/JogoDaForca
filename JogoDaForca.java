@@ -16,9 +16,9 @@ public class JogoDaForca{
         System.out.println("Digite uma letra: ");
         char letra = escaneador.next().charAt(0);
         boolean acertou = regrasDoJogo.adivinharLetra(letra);
-
         if(acertou){
             System.out.println("você acertou");
+            
         }else{
             System.out.println("você errou");
             Forca.exibirForca(regrasDoJogo.getTentativas());
@@ -31,6 +31,9 @@ public class JogoDaForca{
       }else{
         System.out.println("que pena, você perdeu! a palavra era" + palavra.getPalavra());
       }
+
+
+      
   }
 }
 
