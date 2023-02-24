@@ -56,14 +56,20 @@ public class RegrasDoJogo {
 
 
   public boolean exibirPalavraOculta(){
+    boolean acertou = true;
     for(char letra: letrasAdivinhadas){
         if(letra == '_'){
-            return false;
+            acertou = false;
+            System.out.print("_");
+        }else {
+          System.out.print(letra+ " ");
         }
     }
-    return true;
-  }
+    System.out.println();
+    return acertou;
 
+  
+  }
   public boolean acertouTodasAsLetras(){
     for(char letra : letrasAdivinhadas){
       if(letra == '_'){
@@ -96,6 +102,7 @@ public class RegrasDoJogo {
   //   }
   //   return acertou;
   }
+
 
 
 
